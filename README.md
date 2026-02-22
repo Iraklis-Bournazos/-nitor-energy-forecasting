@@ -107,7 +107,7 @@ This avoids forward leakage (Fix A + Fix C).
 | **Baseline** | LGB + CatBoost on raw target (5× spike weighting) |
 | **Log Transform** | Train on `sign(y) * log1p(|y|)` |
 | **Two-Stage** | Separate spike & normal regressors blended via spike probability |
-| **Mega Ensemble** | Ridge stacking (trained on first half of val only — Fix B) |
+| **Mega Ensemble** | Ridge stacking (trained on first half of val only) |
 
 ---
 
